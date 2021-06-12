@@ -1,17 +1,10 @@
 import "./App.css";
+import AlbumFeature from "./features/Album";
 
 function App() {
-  const name = "Nguyen Cong Thanh";
-  const myObj = { id: 1, name: "Doan" };
-  const colorList = ["green", "red", "gray"];
   return (
     <div className="App">
-      Hello {name}. My love is {myObj.name}
-      <ul>
-        {colorList.map((color) => (
-          <li>{color}</li>
-        ))}
-      </ul>
+      <AlbumFeature />
     </div>
   );
 }
