@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  const name = "Nguyen Cong Thanh";
+  const myObj = { id: 1, name: "Doan" };
+  const colorList = ["green", "red", "gray"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Hello {name}. My love is {myObj.name}
+      <ul>
+        {colorList.map((color) => (
+          <li>{color}</li>
+        ))}
+      </ul>
     </div>
   );
 }
